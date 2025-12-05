@@ -23,8 +23,8 @@ jobs:
           target: 'https://testfire.net/login.jsp' # Replace with your application's URL
           # Add other ZAP parameters as needed, e.g., rules to ignore
           allow_issue_writing: true
-      - name: Upload ZAP Report
-        uses: actions/upload-artifact@v4
-        with:
-          name: zap-scan-report
-          path: ./zap_scan.zip # Adjust filename as per your ZAP configuration
+      # - name: Upload ZAP Report
+       # uses: actions/upload-artifact@v4
+       # with:
+       #   name: zap-scan-report
+       #   path: ./zap_scan.zip # Adjust filename as per your ZAP configuration
