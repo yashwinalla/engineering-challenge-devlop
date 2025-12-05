@@ -1,7 +1,6 @@
 permissions: write-all
 
 name: ZAP Baseline Scan
-concurrency: true
 on:
   push:
     branches:
@@ -28,4 +27,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: zap-report
-          path: zap_baseline_report.html # Adjust filename as per your ZAP configuration
+          path: ./zap_scan.zip # Adjust filename as per your ZAP configuration
