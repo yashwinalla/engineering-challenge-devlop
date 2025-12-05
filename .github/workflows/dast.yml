@@ -1,6 +1,7 @@
 permissions: write-all
-name: ZAP Baseline Scan
 
+name: ZAP Baseline Scan
+concurrency: true
 on:
   push:
     branches:
