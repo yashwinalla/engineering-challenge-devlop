@@ -1,3 +1,4 @@
+permissions: write-all
 name: ZAP Baseline Scan
 
 on:
@@ -7,6 +8,7 @@ on:
   pull_request:
     branches:
       - main
+      
 
 jobs:
   zap_scan:
@@ -16,7 +18,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run ZAP Baseline Scan
-        uses: zaproxy/action-baseline@vX # Replace vX with the latest version
+        uses: zaproxy/action-baseline@v0.9.0 # Replace vX with the latest version
         with:
           target: 'https://testfire.net/login.jsp' # Replace with your application's URL
           # Add other ZAP parameters as needed, e.g., rules to ignore
