@@ -11,7 +11,7 @@ on:
       
 
 jobs:
-  zap_scan:
+  scan:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -26,5 +26,5 @@ jobs:
       # - name: Upload ZAP Report
        # uses: actions/upload-artifact@v4
        # with:
-       #   name: zap-scan-report
-       #   path: ./zap_scan.zip # Adjust filename as per your ZAP configuration
+       # name: zap-scan-report
+       # path: ./zap_scan.zip # Adjust filename as per your ZAP configuration
